@@ -21,10 +21,7 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/register": "^7.4.4",
-    "tap": "^13.1.9",
-    "tap-diff": "^0.1.1",
     "tap-min": "^2.0.0",
-    "tap-prettify": "0.0.2",
     "tape": "^4.10.1",
     "tape-catch": "^1.0.6",
     "watch": "^1.0.2"
