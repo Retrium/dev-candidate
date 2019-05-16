@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Retrium/dev-candidate/issues"
   },
-  "homepage": "https://github.com/Retrium/dev-candidate#readme",
+  "homepage": "https://github.com/Retrium/dev-candidate/blob/master/code-challenge/readme.md",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4"
