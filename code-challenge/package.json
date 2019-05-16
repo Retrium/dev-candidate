@@ -1,15 +1,14 @@
 {
-  "name": "fibonacci",
+  "name": "code-challenge",
   "version": "1.0.0",
-  "description": "fibonacci code challenge with unit tests",
+  "description": "Retrium developer code challenge",
   "scripts": {
-    "start": "npm run watch",
-    "test": "tape -r @babel/register -r tape-catch './src/*.test.js' | tap-min",
-    "watch": "watch 'clear && npm run test' ./src"
+    "start": "echo 'put something here'",
+    "test": "echo 'put something here'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Retrium/dev-candidate/tree/master/code-challenges/fibonacci"
+    "url": "https://github.com/Retrium/dev-candidate/tree/master/code-challenge"
   },
   "author": "",
   "license": "MIT",
@@ -19,11 +18,6 @@
   "homepage": "https://github.com/Retrium/dev-candidate#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/register": "^7.4.4",
-    "tap-min": "^2.0.0",
-    "tape": "^4.10.1",
-    "tape-catch": "^1.0.6",
-    "watch": "^1.0.2"
+    "@babel/preset-env": "^7.4.4"
   }
 }
