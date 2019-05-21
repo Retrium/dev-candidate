@@ -65,7 +65,7 @@ Alongside the CSV parser, you should provide a set of test cases to ensure that 
 
 ### The Project
 
-You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. Whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us at challenge@retrium.com.
+You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. Whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us (along with the other email screen reponses) to the thread in AngelList.
 
 Good luck, and let the challenge begin!
 
