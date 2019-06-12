@@ -6,7 +6,6 @@ import webpack from 'webpack';
 import ShareDb from 'sharedb';
 import WebSocket from 'ws';
 import WebpackDevMiddleware from 'webpack-dev-middleware';
-import WebpackHotMiddleware from 'webpack-hot-middleware';
 import WebSocketJSONStream from '@teamwork/websocket-json-stream';
 
 import webpack_config from '../webpack.config';
@@ -23,7 +22,6 @@ app.use(
 		publicPath: webpack_config.output.publicPath,
 	})
 );
-app.use(WebpackHotMiddleware(compiler));
 
 // create the server
 const server = http.createServer(app);

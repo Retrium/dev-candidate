@@ -7,6 +7,5 @@
 				"modules": "cjs"
 			}
 		]
-	],
-	"plugins": ["react-hot-loader/babel"]
+	]
 }
