@@ -2,7 +2,7 @@
 
 Welcome to the Retrium Developer Code Challenge!
 
-For this challenge, you will spend a couple hours implementing and testing an implementation of Conway's Game of Life in pure JavaScript. You may use any testing framework you like (or none at all), as long as the test cases are covered and the requirements are met.
+For this challenge, you will spend a couple hours implementing and testing an implementation of Conway's Game of Life in pure JavaScript. You may use any testing framework you like (or none at all), as long as you submit some test cases along with your work.
 
 Are you ready to show us what you've got? Then read on!
 
@@ -25,13 +25,13 @@ Source: [_Wikipedia: Conway's Game of Life_](https://en.wikipedia.org/wiki/Conwa
 
 ### The Challenge
 
-Your task is to implement the mechanics of Conway's Game of Life as a function that takes the current generation of cells, and returns the next generation. How the code and data are structured is up to you, but you'll want to provide some test cases to ensure that the mechanics are working as designed. And naturally, so we get some additional insight into your thought process.
+Your task is to implement the mechanics of Conway's Game of Life as a function that takes the current generation of cells, and returns the next generation of cells. How the code is structured and the data represented is up to you, but we want you to provide some test cases to ensure that the mechanics are working as designed. And naturally, so we get some additional insight into your thought process. Just to be clear, you're not going to be building any user interfaces here: just the basic mechanics of the game.
 
 _Hint_: There are a number of pattern examples in the Wikipedia article cited above that make good test cases: particularly the still lifes and oscillators.
 
 ### The Project
 
-You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. Whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us (along with the other email screen responses) to the thread in AngelList.
+You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. The project is already configured to use [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/), so you can use the latest and greatest JavaScript features without wasting valuable setup time, or worrying about matters of style. So whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us (along with the other email screen responses) to the thread in AngelList.
 
 Good luck, and let the challenge begin!
 
