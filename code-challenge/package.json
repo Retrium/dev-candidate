@@ -3,8 +3,7 @@
 	"version": "1.0.0",
 	"description": "Retrium developer code challenge",
 	"scripts": {
-		"start": "babel-node src/game.test.js",
-		"lint": "eslint -c .eslintrc.js src"
+		"start": "nodemon --exec babel-node src/game.test.js"
 	},
 	"repository": {
 		"type": "git",
@@ -16,7 +15,7 @@
 		"url": "https://github.com/Retrium/dev-candidate/issues"
 	},
 	"homepage": "https://github.com/Retrium/dev-candidate/blob/master/code-challenge/readme.md",
-	"dependencies": {
+	"devDependencies": {
 		"@babel/cli": "^7.4.4",
 		"@babel/core": "^7.4.5",
 		"@babel/node": "^7.4.5",
@@ -25,6 +24,7 @@
 		"@babel/runtime": "^7.4.5",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^5.16.0",
+		"nodemon": "^2.0.3",
 		"prettier": "^1.18.2"
 	}
 }

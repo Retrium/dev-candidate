@@ -31,7 +31,7 @@ _Hint_: There are a number of pattern examples in the Wikipedia article cited ab
 
 ### The Project
 
-You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. The project is already configured to use [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/), so you can use the latest and greatest JavaScript features without wasting valuable setup time, or worrying about matters of style. So whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us (along with the other email screen responses) to the thread in AngelList.
+You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. The project is already configured to use [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/), so you can use the latest and greatest JavaScript features without wasting valuable setup time, or worrying about matters of style. The container also uses [Nodemon](https://nodemon.io/) to watch your files and continually re-run your tests. So whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, simply copy the sandbox URL from the browser, and email it back to us (along with the other email screen responses) to the thread in AngelList.
 
 Good luck, and let the challenge begin!
 
