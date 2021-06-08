@@ -1,22 +1,51 @@
 import React, { useState } from 'react';
-import Select from 'react-select';
 import { colorPalette } from './colors';
+import { Header } from './Header';
 import { SafetyCheck } from '../SafetyCheck';
 
 import 'normalize.css';
 
-const FACILITATOR_ROLE = 'FACILITATOR';
-const PARTICIPANT_ONE_ROLE = 'PARTICIPANT_ONE';
-const PARTICIPANT_TWO_ROLE = 'PARTICIPANT_TWO';
+export const FACILITATOR_ROLE = 'FACILITATOR';
+export const PARTICIPANT_ROLE = 'PARTICIPANT';
 
-const ROLE_OPTIONS = [
-	{ label: 'Feline Facilitator', value: FACILITATOR_ROLE },
-	{ label: 'Panther Participant', value: PARTICIPANT_ONE_ROLE },
-	{ label: 'Parrot Participant', value: PARTICIPANT_TWO_ROLE },
-];
+export const PARTICIPANTS = {
+	user1: {
+		firstName: 'Feline',
+		lastName: 'Facilitator',
+		role: FACILITATOR_ROLE,
+		userId: 'user1',
+	},
+	user2: {
+		firstName: 'Panther',
+		lastName: 'Participant',
+		role: PARTICIPANT_ROLE,
+		userId: 'user2',
+	},
+	user3: {
+		firstName: 'Parrot',
+		lastName: 'Participant',
+		role: PARTICIPANT_ROLE,
+		userId: 'user3',
+	},
+};
+
+const INITIAL_SAFETY_RATINGS = {
+	user1: null,
+	user2: null,
+	user3: null,
+};
 
 export default function App() {
-	const [currentRole, setCurrentRole] = useState(FACILITATOR_ROLE);
+	const [currentUser, setCurrentUser] = useState(PARTICIPANTS.user1);
+	const [safetyRatings, setSafetyRatings] = useState(INITIAL_SAFETY_RATINGS);
+
+	const handleSafetyRatingUpdate = newRating => {
+		const newSafetyRatings = {
+			...safetyRatings,
+			[currentUser.userId]: newRating,
+		};
+		setSafetyRatings(newSafetyRatings);
+	};
 
 	return (
 		<div
@@ -28,39 +57,16 @@ export default function App() {
 				width: '100%',
 			}}
 		>
-			<header
-				style={{
-					alignItems: 'center',
-					backgroundColor: colorPalette.slate,
-					color: colorPalette.white,
-					display: 'flex',
-					justifyContent: 'space-between',
-					padding: 20,
-				}}
-			>
-				<h1 style={{ fontFamily: '"DM Sans", sans-serif' }}>
-					Retrium Safety Check
-				</h1>
-				<label>
-					Current User
-					<Select
-						defaultValue={ROLE_OPTIONS[0]}
-						getValue={() =>
-							ROLE_OPTIONS.find(option => option.value === currentRole)
-						}
-						onChange={value => setCurrentRole(value.value)}
-						options={ROLE_OPTIONS}
-						styles={{
-							container: base => ({
-								...base,
-								color: colorPalette.midnight,
-								width: 250,
-							}),
-						}}
-					/>
-				</label>
-			</header>
-			<SafetyCheck />
+			<Header
+				allUsers={PARTICIPANTS}
+				currentUser={currentUser}
+				setCurrentUser={setCurrentUser}
+			/>
+			<SafetyCheck
+				currentUser={currentUser}
+				safetyRatings={safetyRatings}
+				updateSafetyRating={handleSafetyRatingUpdate}
+			/>
 		</div>
 	);
 }
