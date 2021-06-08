@@ -1,3 +1,6 @@
+//JTM reduce this to the colors that we use in the shell
+// feel free to edit/add/remove colors from this palette, it was
+// just a starter to make the shell look ok
 export const colorPalette = {
 	retriumOrange: '#E96222',
 	tomato: '#FF3333',

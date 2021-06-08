@@ -22,6 +22,7 @@ export default function App() {
 		<div
 			style={{
 				backgroundColor: colorPalette.silver,
+				fontFamily: '"Open Sans", sans-serif',
 				height: '100%',
 				position: 'absolute',
 				width: '100%',
