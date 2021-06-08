@@ -1,38 +1,32 @@
-## Retrium Developer Code Challenge
+## Retrium UI/UX Engineer Project
 
-Welcome to the Retrium Developer Code Challenge!
+Welcome to the Retrium UI/UX Engineer Project!
 
-For this challenge, you will spend a couple hours implementing and testing an implementation of Conway's Game of Life in pure JavaScript. You may use any testing framework you like (or none at all), as long as you submit some test cases along with your work.
+For this project, you will spend a couple hours implementing an interactive prototype of a Safety Check activity to satisfy some Jobs to Be Done for hypothetical users. Afterward, you will conduct a mob prototyping session with Retrium engineers to further iterate on the prototype. This project is meant to show us your approach to UI/UX design and your chops for prototyping in React. This project is not for usage within Retrium; this is a step in the interview process, not a request for free labor.
 
-Are you ready to show us what you've got? Then read on!
+### What are you building?
 
-### Conway's Game of Life
+You will be creating a prototype in React for a facilitation activity that allows participants in a retrospective to rate their [psychological safety](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/psychological-safety#:~:text=%22Psychological%20safety%20is%20a%20belief,questions%2C%20concerns%20or%20mistakes.%22) from 1 - 5. This is typically called a [Safety Check](https://www.retrium.com/blog/what-to-do-when-people-dont-feel-safe-in-the-retrospective). The activity will begin with one facilitator (the user tasked with leading and running the activity), and up to 50 participants. For the purposes of this project, we can assume this is a standalone activity, although it is usually used as part of a larger retrospective.
 
-John Conway was interested in a problem presented in the 1940s by renowned mathematician John von Neumann, who tried to find a hypothetical machine that could build copies of itself. He succeeded when he found a mathematical model for such a machine with very complicated rules on a rectangular grid. The Game of Life emerged in 1970 as Conway's successful attempt to simplify von Neumann's ideas.
+The prototype should enable the following [Jobs to Be Done](https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca):
 
-What is so fascinating and enduring about Conway's game is the incredible range of emergent patterns that can result from a simple set of initial conditions. The game is "played" (though there are no actual players) on an infinite two-dimensional grid, where each cell may be in one of two possible states: _alive_ or _dead_. The mechanics of the game are fully described by four simple rules:
+Facilitator: **Empower me to adapt my retrospective plan to address the team’s needs.**
+Participants: **Empower me to honestly describe my feelings without fear or self-consciousness.**
 
-- Any live cell with fewer than two live neighbors dies (underpopulation)
-- Any live cell with two or three live neighbors lives on to the next generation
-- Any live cell with more than three live neighbors dies (overpopulation)
-- Any dead cell with exactly three live neighbors becomes a live cell (reproduction)
+Feel free to make choices about the look and feel of the activity. In addition to the Jobs to Be Done, the only requirements are:
 
-![Gosper's Glider Gun](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif) _A "gun" that creates "gliders"_
+- Participants should be able to rate their psychological safety from 1 - 5.
+- Facilitators should be able to see the results of the users’ submissions.
+- Facilitators should receive a recommendation on how to handle the results.
 
-The rules are applied simultaneously to every cell on the board, and may continue to be applied repeatedly to create new "generations." Each generation is a pure function of the previous one.
-
-Source: [_Wikipedia: Conway's Game of Life_](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-
-### The Challenge
-
-Your task is to implement the mechanics of Conway's Game of Life as a function that takes the current generation of cells, and returns the next generation of cells. How the code is structured and the data represented is up to you, but we want you to provide some test cases to ensure that the mechanics are working as designed. And naturally, so we get some additional insight into your thought process. Just to be clear, you're not going to be building any user interfaces here: just the basic mechanics of the game.
-
-_Hint_: There are a number of pattern examples in the Wikipedia article cited above that make good test cases: particularly the still lifes and oscillators.
+You will be provided with a shell application that contains all of the data-layer functionality you will need for this task, as well as a basic React installation. Inside of the shell, you will be able to impersonate a facilitator or a participant. Feel free to install any additional libraries if you so choose. As this is a prototype, we’re not looking for pristine production-ready code, but keep in mind that we’ll be working hands-on with it in the mob prototyping session.
 
 ### The Project
 
-You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code and run your tests. The project is already configured to use [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/), so you can use the latest and greatest JavaScript features without wasting valuable setup time, or worrying about matters of style. So whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, copy the sandbox URL from the browser, and email it back to us (along with the other email screen responses) to the thread in AngelList.
+You will be submitting this project on CodeSandbox. The `sandbox.config.json` file tells CodeSandbox to spin up a Node.js container for you to write your code. The project is already configured to use [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), and [Prettier](https://prettier.io/), so you can use the latest and greatest JavaScript features without wasting valuable setup time, or worrying about matters of style. The container also watches your files and continually rebuilds your prototype. So whenever you're ready, click on the link below, and then click the "Fork" button to get started. When you're finished, simply copy the sandbox URL from the browser, and email it back to us.
 
-Good luck, and let the challenge begin!
+After we’ve had a chance to review the prototype, we’ll schedule a mob prototyping session between you and a few Retrium engineers. In this session, you’ll demo your prototype to us and gather feedback. Then, together, we will collaboratively iterate on the prototype. We might touch aspects like design, UX, or possibly add features. The mob prototyping session is where we get to learn how your design brain works, and you get to learn how we typically create user experiences through collaboration.
 
-[Start the Code Challenge](https://codesandbox.io/s/github/Retrium/dev-candidate/tree/master/code-challenge)
+Good luck, and let the project begin!
+
+[Start the Project](https://codesandbox.io/s/crazy-hermann-8r5nz?from-embed=&file=/README.md)
