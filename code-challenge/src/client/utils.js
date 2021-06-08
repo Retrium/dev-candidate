@@ -9,7 +9,7 @@ export function isParticipant(user) {
 }
 
 export function haveIVoted(safetyRatings, currentUser) {
-	return safetyRatings[currentUser.userId] !== null;
+	return getMyRating(safetyRatings, currentUser) !== null;
 }
 
 export function hasEveryoneVoted(safetyRatings) {
@@ -17,4 +17,21 @@ export function hasEveryoneVoted(safetyRatings) {
 		rating => rating !== null
 	);
 	return completedRatings.length === Object.keys(PARTICIPANTS).length;
+}
+
+export function getMyRating(safetyRatings, currentUser) {
+	return safetyRatings[currentUser.userId];
+}
+
+export function getRatingsTotals(safetyRatings) {
+	return Object.values(safetyRatings).reduce(
+		(acc, curr) => {
+			const existingRating = acc[curr];
+			return {
+				...acc,
+				[curr]: existingRating + 1,
+			};
+		},
+		{ 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 }
+	);
 }
