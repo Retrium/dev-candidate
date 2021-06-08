@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const SafetyCheck = () => {
-	return <div>Safety Check goes here</div>;
+	return <div style={{ padding: 20 }}>Safety Check goes here</div>;
 };
