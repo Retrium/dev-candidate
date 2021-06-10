@@ -4,7 +4,8 @@
 	"description": "Retrium developer code challenge",
 	"scripts": {
 		"start": "node --require @babel/register src/server.js",
-		"lint": "eslint -c .eslintrc.js src"
+		"lint": "eslint -c .eslintrc.js src",
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +32,7 @@
 		"eslint-plugin-import": "^2.17.3",
 		"eslint-plugin-react": "^7.13.0",
 		"eslint-plugin-react-hooks": "^1.6.0",
+		"jest": "^27.0.4",
 		"prettier": "^1.18.2",
 		"webpack": "^4.32.2",
 		"webpack-cli": "^3.3.2",
