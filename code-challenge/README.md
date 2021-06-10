@@ -39,4 +39,4 @@ After we’ve had a chance to review the prototype, we’ll schedule a mob proto
 
 Good luck, and let the challenge begin!
 
-[Start the Code Challenge](https://codesandbox.io/s/github/Retrium/dev-candidate/tree/master/code-challenge)
+[Start the Code Challenge](https://codesandbox.io/s/sparkling-bird-uo7uu)
