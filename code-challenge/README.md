@@ -33,4 +33,4 @@ After we’ve had a chance to review the prototype, we’ll schedule a mob proto
 
 Good luck, and let the project begin!
 
-[Start the Project](https://codesandbox.io/s/crazy-hermann-8r5nz?from-embed=&file=/README.md)
+[Start the Project](https://codesandbox.io/s/retrium-uiux-engineer-prototyping-challenge-6f82d)
