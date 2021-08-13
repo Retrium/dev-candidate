@@ -2,13 +2,13 @@
 
 Welcome to the Retrium UI/UX Engineer Project!
 
-For this project, you will spend a couple hours implementing an interactive prototype of a Safety Check activity to satisfy some Jobs to Be Done for hypothetical users. Afterward, you will conduct a mob prototyping session with Retrium engineers to further iterate on the prototype. This project is as much an opportunity for us to understand you as a candidate as it is for you to get to know us as potential teammates. We’ll see your approach to UI/UX design and your chops for prototyping in React, and you’ll see what it’s like to work with us in a collaborative setting.
+For this project, you will spend a couple hours implementing an interactive prototype of a Safety Check activity to satisfy some Jobs to Be Done for hypothetical users. Afterward, you will conduct a mob prototyping session with Retrium engineers to further iterate on the prototype. This project is as much an opportunity for us to understand you as a candidate as it is for you to get to know us as potential teammates. We’ll see your approach to UI/UX design and your chops for prototyping, and you’ll see what it’s like to work with us in a collaborative setting.
 
 This project is not for usage within Retrium; this is a step in the interview process, not a request for free labor.
 
 ### What are you building?
 
-You will be creating a prototype in React for a facilitation activity that allows participants in a retrospective to rate their [psychological safety](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/psychological-safety#:~:text=%22Psychological%20safety%20is%20a%20belief,questions%2C%20concerns%20or%20mistakes.%22) from 1 - 5. This is typically called a [Safety Check](https://www.retrium.com/blog/what-to-do-when-people-dont-feel-safe-in-the-retrospective). The activity will begin with one facilitator (the user tasked with leading and running the activity), and up to 50 participants. For the purposes of this project, we can assume this is a standalone activity, although it is usually used as part of a larger retrospective.
+You will be creating a prototype for a facilitation activity that allows participants in a retrospective to rate their [psychological safety](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/psychological-safety#:~:text=%22Psychological%20safety%20is%20a%20belief,questions%2C%20concerns%20or%20mistakes.%22) from 1 - 5. This is typically called a [Safety Check](https://www.retrium.com/blog/what-to-do-when-people-dont-feel-safe-in-the-retrospective). The activity will begin with one facilitator (the user tasked with leading and running the activity), and up to 50 participants. For the purposes of this project, we can assume this is a standalone activity, although it is usually used as part of a larger retrospective.
 
 The prototype should enable the following [Jobs to Be Done](https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca):
 
@@ -21,7 +21,9 @@ Feel free to make choices about the look and feel of the activity. In addition t
 - Facilitators should be able to see the results of the users’ submissions.
 - Facilitators should receive a recommendation on how to handle the results.
 
-You will be provided with a shell application that contains all of the data-layer functionality you will need for this task, as well as a basic React installation. Inside of the shell, you will be able to impersonate a facilitator or a participant via a select box in the header - note this is for development purposes and not intentional functionality of the Safety Check. Feel free to install any additional libraries if you so choose.
+You can use any tool of your choosing to create this prototype (React, Adobe XD, Figma, InVision, anything else). Pick a tool that you're comfortable with, because we will be building off of the output live in the mob prototyping session.
+
+If you choose to use React, we have provided a CodeSandbox for you to get off the ground running. It includes a shell application that contains all of the data-layer functionality you will need for this task, as well as a basic React installation. Inside of the shell, you will be able to impersonate a facilitator or a participant via a select box in the header - note this is for development purposes and not intentional functionality of the Safety Check. Feel free to install any additional libraries if you so choose.
 
 ### The Project
 
