@@ -12,12 +12,11 @@
 	},
 	"extends": [
 		"eslint:recommended",
-		"plugin:flowtype/recommended",
 		"plugin:react/recommended",
 		"plugin:import/errors",
 		"plugin:import/warnings"
 	],
-	"plugins": ["react", "react-hooks", "flowtype", "import"],
+	"plugins": ["react", "react-hooks", "import"],
 	"settings": {
 		"react": {
 			"version": "detect"
