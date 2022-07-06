@@ -1,6 +1,10 @@
 {
+	"parser": "@babel/eslint-parser",
 	"parserOptions": {
-		"ecmaVersion": 2018
+		"sourceType": "module",
+		"allowImportExportEverywhere": true,
+		"ecmaVersion": 2018,
+		"requireConfigFile": false
 	},
 	"env": {
 		"node": true,
@@ -8,5 +12,5 @@
 		"jest/globals": true
 	},
 	"extends": ["eslint:recommended"],
-	"plugins": ["jest"]
+	"plugins": ["import", "jest"]
 }
