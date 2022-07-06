@@ -1,1 +1,1 @@
-console.error('no tests!');
+console.error('no tests!'); //JTM add test here

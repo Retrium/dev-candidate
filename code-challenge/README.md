@@ -2,7 +2,7 @@
 
 Welcome to the Retrium Developer Code Challenge!
 
-For this challenge, you will spend a couple hours implementing and testing an implementation of Conway's Game of Life in pure JavaScript. You may use any testing framework you like (or none at all), as long as you submit some test cases along with your work.
+For this challenge, you will spend a couple hours implementing and testing an implementation of Conway's Game of Life in pure JavaScript. You will be provided with configurations and samples with which to unit test your work.
 
 Are you ready to show us what you've got? Then read on!
 
@@ -25,7 +25,7 @@ Source: [_Wikipedia: Conway's Game of Life_](https://en.wikipedia.org/wiki/Conwa
 
 ### The Challenge
 
-Your task is to implement the mechanics of Conway's Game of Life as a function that takes the current generation of cells, and returns the next generation of cells. How the code is structured and the data represented is up to you, but we want you to provide some test cases to ensure that the mechanics are working as designed. And naturally, so we get some additional insight into your thought process. Just to be clear, you're not going to be building any user interfaces here: just the basic mechanics of the game.
+Your task is to implement the mechanics of Conway's Game of Life as a function that takes the current generation of cells, and returns the next generation of cells. How the code is structured is up to you, but we're providing the data structure and some helpers to get you started. We want you to provide some test cases to ensure that the mechanics are working as designed, so we've included configurations and example tests for [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/), and [Tape](https://github.com/substack/tape) - pick whichever you feel most comfortable with (or none of the above!) and use it to test your work. To be clear, you're not going to be building any user interfaces here: just the basic mechanics of the game. We're looking for insight into your thought process.
 
 _Hint_: There are a number of pattern examples in the Wikipedia article cited above that make good test cases: particularly the still lifes and oscillators.
 

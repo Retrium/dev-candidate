@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"description": "Retrium developer code challenge",
 	"scripts": {
-		"start": "nodemon --exec babel-node src/game.test.js"
+		"test:jest": "jest --watchAll --testMatch **/src/game.jest.js",
+		"test:vanilla": "nodemon --exec babel-node src/game.test.js"
 	},
 	"repository": {
 		"type": "git",
@@ -23,7 +24,10 @@
 		"@babel/plugin-transform-runtime": "7.17.0",
 		"@babel/preset-env": "7.16.11",
 		"@babel/runtime": "7.17.9",
+		"babel-jest": "28.1.2",
 		"eslint": "8.14.0",
+		"eslint-plugin-jest": "26.5.3",
+		"jest": "28.1.2",
 		"nodemon": "2.0.15",
 		"prettier": "2.6.2"
 	}
