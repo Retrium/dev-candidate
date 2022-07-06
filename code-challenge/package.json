@@ -4,6 +4,7 @@
 	"description": "Retrium developer code challenge",
 	"scripts": {
 		"test:jest": "jest --watchAll --testMatch **/src/game.jest.js",
+		"test:mocha": "mocha -w src/game.mocha.js",
 		"test:vanilla": "nodemon --exec babel-node src/game.test.js"
 	},
 	"repository": {
@@ -28,6 +29,7 @@
 		"eslint": "8.14.0",
 		"eslint-plugin-jest": "26.5.3",
 		"jest": "28.1.2",
+		"mocha": "10.0.0",
 		"nodemon": "2.0.15",
 		"prettier": "2.6.2"
 	}
