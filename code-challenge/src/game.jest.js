@@ -12,10 +12,6 @@ describe('Game of Life - getNextGeneration', () => {
     expect(generationThree).toEqual(BLOCK_BOARD);
   });
 
-  //JTM is this too much?
-  //    - alternatively, add helper (selector?) functions and example or skeleton tests for them
-  // - LEFT OFF:
-  //   - how do selectors help?
   it('a blinker will cycle between two states across all generations', () => {
     const generationOne = BLINKER_BOARD;
     const generationTwo = getNextGeneration(generationOne);
