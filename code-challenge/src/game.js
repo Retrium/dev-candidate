@@ -5,7 +5,7 @@ export const BLOCK_BOARD = {
   3: [],
 };
 
-export const OSCILLATOR_BOARD = {
+export const BLINKER_BOARD = {
   0: [],
   1: [2],
   2: [2],

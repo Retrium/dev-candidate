@@ -4,7 +4,7 @@
 	"description": "Retrium developer code challenge",
 	"scripts": {
 		"test:jest": "jest --watchAll --testMatch **/src/game.jest.js",
-		"test:mocha": "mocha -w src/game.mocha.js",
+		"test:mocha": "mocha --require @babel/register -w src/game.mocha.js",
 		"test:tape": "babel-node node_modules/tape-watch/bin/tape-watch src/game.tape.js | tap-diff",
 		"test:vanilla": "nodemon --exec babel-node src/game.test.js"
 	},
@@ -25,6 +25,7 @@
 		"@babel/node": "7.16.8",
 		"@babel/plugin-transform-runtime": "7.17.0",
 		"@babel/preset-env": "7.16.11",
+		"@babel/register": "^7.18.6",
 		"@babel/runtime": "7.17.9",
 		"babel-jest": "28.1.2",
 		"eslint": "8.14.0",
