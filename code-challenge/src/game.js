@@ -1,6 +1,6 @@
 /**
- * These example boards represent the row and column of live cells, where an empty array
- * represents an empty row. Feel free to keep this data structure or change it to something
+ * These example boards represent the coordinates of live cells.
+ * Feel free to keep this data structure or change it to something
  * that works better for you.
  */
 export const BLOCK_BOARD = {
