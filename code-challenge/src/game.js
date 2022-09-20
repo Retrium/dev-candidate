@@ -1,0 +1,1 @@
+// Copy the candidate's game.js file here!
