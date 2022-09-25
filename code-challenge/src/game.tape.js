@@ -7,9 +7,9 @@ test('a still life should not change across multiple generations', (assert) => {
   const generationTwo = getNextGeneration(generationOne);
   const generationThree = getNextGeneration(generationTwo);
 
-  assert.equal(generationOne, generationThree);
-  assert.equal(generationTwo, generationThree);
-  assert.equal(generationThree, BLOCK_BOARD);
+  assert.deepEqual(generationOne, generationThree);
+  assert.deepEqual(generationTwo, generationThree);
+  assert.deepEqual(generationThree, BLOCK_BOARD);
 
   assert.end();
 });

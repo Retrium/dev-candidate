@@ -16,9 +16,9 @@ export const BLINKER_BOARD = {
   '3,2': true,
 };
 
-// Implement the Game of Life here to transform the inputBoard into the outputBoard!
+// Implement the Game of Life here - take in an inputBoard and output a new outputBoard!
 export function getNextGeneration(inputBoard) {
-  const outputBoard = inputBoard;
+  const outputBoard = { ...inputBoard };
 
   return outputBoard;
 }
