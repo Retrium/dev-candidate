@@ -8,8 +8,8 @@ describe('Game of Life - getNextGeneration', () => {
     const generationTwo = getNextGeneration(generationOne);
     const generationThree = getNextGeneration(generationTwo);
 
-    assert.equal(generationOne, generationTwo);
-    assert.equal(generationTwo, generationThree);
-    assert.equal(generationThree, BLOCK_BOARD);
+    assert.deepStrictEqual(generationOne, generationTwo);
+    assert.deepStrictEqual(generationTwo, generationThree);
+    assert.deepStrictEqual(generationThree, BLOCK_BOARD);
   });
 });
